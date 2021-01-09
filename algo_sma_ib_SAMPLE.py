@@ -15,7 +15,7 @@ df['SMA'] = df['RTH_C'].rolling(15).mean()
 # signal
 df['con1'] = [1 if ibr > pibr else 0 for ibr, pibr in zip(df['IB_RNG'], df['pIB_RNG'])]
 df['con2'] = [1 if c < sma else 0 for c, sma in zip(df['RTH_C'], df['SMA'])]
-df['signal'] = [1 if c1+c2 == 2 else 0 for c1, c2, c3 in zip(df['con1'], df['con2'])]
+df['signal'] = [1 if c1+c2 == 2 else 0 for c1, c2 in zip(df['con1'], df['con2'])]
 
 # returns
 df['return'] = df['RTH_C'].shift(-2) - df['RTH_C'].shift(-1)
