@@ -2,7 +2,7 @@
 Algorithmic trading is a method of executing orders using automated pre-programmed trading instructions accounting for variables such as time, price, and volume.
 
 ## #1 Example:
-Sample of strategy using simple moving average with period 15 and initial balance range for buy-only trading ES futures. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
+Sample of strategy using simple condicions based on moving average with period 15 and initial balance range for buy-only trading ES futures. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
 ```python
 df['con1'] = [1 if ibr > pibr else 0 for ibr, pibr in zip(df['IB_RNG'], df['pIB_RNG'])]
 df['con2'] = [1 if c < sma else 0 for c, sma in zip(df['RTH_C'], df['SMA'])]
