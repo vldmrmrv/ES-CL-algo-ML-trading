@@ -6,5 +6,5 @@ Sample of strategy using simple moving average with period 15 and initial balanc
 ![Algo IRET](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_iret_SAMPLE.png)
 
 ## #2 Example:
-Long term Buy&Hold timeing strategy using %change of price to indicate potentional long term buying opportunities in SPX after significant pullback entries with markers for visual interpretation. 
+Long term Buy&Hold timeing strategy using %change of price to indicate potentional long term buying opportunities in SPX (entries with markers for visual interpretation). 
 ![Buy Opp](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/buying%20opportunities.png)
