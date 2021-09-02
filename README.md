@@ -17,8 +17,8 @@ Long term Buy&Hold timeing strategy using %change of price to indicate potention
 ## #3 Example:
 Sample of strategy using simple condicions based on opening above SMA20 and specific previous days closes for buy-only trading ES futures. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
 ```python
-df['con2'] = [1 if d >= e else 0 for d, e in zip(df['Open'], df['SMA'])]
-df['con3'] = [1 if c == 'DOWN' and cc == 'DOWN' else 0 for c, cc in zip(df['p_UD'], df['pp_UD'])]
+df['con2'] = [1 if op >= sm else 0 for op, sm in zip(df['Open'], df['SMA'])]
+df['con3'] = [1 if p == 'DOWN' and pp == 'DOWN' else 0 for p, pp in zip(df['p_UD'], df['pp_UD'])]
 df['signal'] = [1 if c1+c2+c3 == 3 else 0 for c1, c2, c3 in zip(df['con1'], df['con2'], df['con3'])]
 ```
 ![Algo IRRE](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_sma20_pD_ppD_SAMPLE.png)
