@@ -29,8 +29,13 @@ Sample of strategy similar to #3 useing SMA20 and specific previous days closes 
 ![Algo intra](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_intra_SAMPLE.png)
 
 ## #5 Example:
-ALgo strategy similar useing candle patterns and for buy-only trading ES futures with an intraweek holding time (no possitions are hold over the weekend). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
+Strategy useing candle patterns and OHLC values for buy-only trading ES futures with an intraweek holding time (no possitions are hold over the weekend). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
 
 ![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_rrtt.png)
+
+## #5 Example:
+Strategy useing volume and OHLC values for buy-only trading ES futures with 2 days holding time. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
+
+![Algo arrt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_arrt.png)
 
 
