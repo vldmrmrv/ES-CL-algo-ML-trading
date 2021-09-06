@@ -33,7 +33,7 @@ Strategy useing candle patterns and OHLC values for buy-only trading ES futures 
 
 ![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_rrtt.png)
 
-## #5 Example:
+## #6 Example:
 Strategy useing volume and OHLC values for buy-only trading ES futures with 2 days holding time. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
 
 ![Algo arrt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_arrt.png)
