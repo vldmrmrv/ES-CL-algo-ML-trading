@@ -41,6 +41,6 @@ Strategy useing volume and OHLC values for buy-only trading ES futures with 2 da
 ## #7 Example:
 Indraday strategy useing 30min bars for buy-only trading ES futures with intraday holding time (661 trades - 1 year period).  Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
 
-![Algo arrt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_exer.png)
+![Algo arrt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_exre.png)
 
 
