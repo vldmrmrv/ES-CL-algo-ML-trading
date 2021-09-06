@@ -32,15 +32,3 @@ Sample of strategy similar to #3 useing SMA20 and specific previous days closes 
 Strategy useing candle patterns and OHLC values for buy-only trading ES futures with an intraday holding time (no possitions are hold over the overnight). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
 
 ![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_rrtt.png)
-
-## #6 Example:
-Strategy useing volume and OHLC values for buy-only trading ES futures with 2 days holding time. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
-
-![Algo arrt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_arrt.png)
-
-## #7 Example:
-Indraday strategy useing 30min bars for buy-only trading ES futures with intraday holding time (661 trades - 1 year period).  Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
-
-![Algo arrt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_exre.png)
-
-
