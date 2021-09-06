@@ -21,10 +21,16 @@ df['con2'] = [1 if op >= sm else 0 for op, sm in zip(df['Open'], df['SMA'])]
 df['con3'] = [1 if p == 'D' and pp == 'D' else 0 for p, pp in zip(df['p_UD'], df['pp_UD'])]
 df['signal'] = [1 if c1+c2+c3 == 3 else 0 for c1, c2, c3 in zip(df['con1'], df['con2'], df['con3'])]
 ```
-![Algo IRRE](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_sma20_pD_ppD_SAMPLE.png)
+![Algo sma](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_sma20_pD_ppD_SAMPLE.png)
 
 ## #4 Example:
 Sample of strategy similar to #3 useing SMA20 and specific previous days closes for buy-only trading ES futures with an intraday holding time (no possitions are hold overnight). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
 
-![Algo IRINE](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_intra_SAMPLE.png)
+![Algo intra](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_intra_SAMPLE.png)
+
+## #5 Example:
+ALgo strategy similar useing candle patterns and for buy-only trading ES futures with an intraweek holding time (no possitions are hold over the weekend). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
+
+![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_rrtt.png)
+
 
