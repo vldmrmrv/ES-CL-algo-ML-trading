@@ -43,3 +43,11 @@ df['p_Mid'] = df['Mid'].shift(1)
 Strategy using IBS strenght and OHLC values for buy-only trading ES futures with 15 minutes holding time on M15 chart (no possitions are hold overnight). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, last 10 years / 8263 trades.
 
 ![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_IBS_M15.png)
+
+## #7 Example:
+```python
+df['IBS'] = (df['Close'] - df['Low']) / (df['High'] - df['Low'])
+```
+Similar IBS strenght strategy trading ES futures on daily data (one day holding period). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, last 10 years. Only 83 trades but invested in market for only 3.4% of the time this strategy produce great results.
+
+![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_IBS_daily.png)
