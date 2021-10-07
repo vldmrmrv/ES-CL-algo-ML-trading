@@ -32,3 +32,14 @@ Sample of strategy similar to #3 using SMA20 and specific previous days closes f
 Strategy using candle patterns and OHLC values for buy-only trading ES futures with an intraday holding time (no possitions are hold overnight). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk.
 
 ![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_rrtt.png)
+
+## #6 Example:
+```python
+df['IBS'] = (df['Close'] - df['Low']) / (df['High'] - df['Low'])
+df['p_High'] = df['High'].shift(1)
+df['Mid'] = (df['High'] + df['Low']) / 2
+df['p_Mid'] = df['Mid'].shift(1)
+```
+Strategy using IBS strenght and OHLC values for buy-only trading ES futures with 15 minutes holding time on M15 chart (no possitions are hold overnight). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, last 10 years and 8263 trades.
+
+![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_IBS_M15.png)
