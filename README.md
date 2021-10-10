@@ -49,8 +49,8 @@ Strategy using IBS strenght and OHLC values for buy-only trading ES futures with
 import investpy
 
 data = investpy.economic_calendar(
-    from_date='01/01/2021',
-    to_date='31/12/2021',
+    from_date='01/01/2010',
+    to_date='31/12/2020',
     countries=['united states'],
     importances=['high', 'medium']
 )
