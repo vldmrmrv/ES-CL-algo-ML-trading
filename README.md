@@ -57,6 +57,6 @@ data = investpy.economic_calendar(
 
 df['IBS'] = (df['Close'] - df['Low']) / (df['High'] - df['Low'])
 ```
-Similar IBS strenght strategy trading ES futures on daily data and fundamental news (one day holding period). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, last 10 years. Only 83 trades but invested in market for only 3.4% of the time this strategy produce great results.
+Similar IBS strenght strategy trading ES futures on daily data with fundamental news taken into consideration (one day holding period). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, last 10 years. Only 83 trades but invested in market for only 3.4% of the time this strategy produce great results.
 
 ![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_IBS_daily.png)
