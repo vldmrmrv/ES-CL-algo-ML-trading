@@ -46,8 +46,17 @@ Strategy using IBS strenght and OHLC values for buy-only trading ES futures with
 
 ## #7 Example:
 ```python
+import investpy
+
+data = investpy.economic_calendar(
+    from_date='01/01/2021',
+    to_date='31/12/2021',
+    countries=['united states'],
+    importances=['high', 'medium']
+)
+
 df['IBS'] = (df['Close'] - df['Low']) / (df['High'] - df['Low'])
 ```
-Similar IBS strenght strategy trading ES futures on daily data (one day holding period). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, last 10 years. Only 83 trades but invested in market for only 3.4% of the time this strategy produce great results.
+Similar IBS strenght strategy trading ES futures on daily data and fundamental news (one day holding period). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, last 10 years. Only 83 trades but invested in market for only 3.4% of the time this strategy produce great results.
 
 ![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_IBS_daily.png)
