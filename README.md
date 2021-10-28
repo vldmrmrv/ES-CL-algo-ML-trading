@@ -60,3 +60,12 @@ df['IBS'] = (df['Close'] - df['Low']) / (df['High'] - df['Low'])
 Similar IBS strenght strategy trading ES futures on daily data with fundamental news taken into consideration (one day holding period). Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, last 10 years. Only 83 trades but invested in market for only 3.4% of the time this strategy produce great results.
 
 ![Algo rrtt](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_IBS_daily.png)
+
+## #8 Example:
+Intraday strategy trading ES futures on M5 data with 3 if-then conditions and intraday holding period. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results with 2 ticks slippage and $5 commisions on every trade, 2010-2019 years. Only 259 trades in 10 years. Barchart with profits for different months and heatmap for overall outlook on strategy during whole test period.
+
+![Algo adee1](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_M5_buyside/ALGO_ADEE_m5_intraday(259).png)
+
+![Algo adee2](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_M5_buyside/ALGO_ADEE_ruturn_months.png)
+
+![Algo adee3](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_M5_buyside/ALGO_ADEE_YMheat.png)
