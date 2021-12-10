@@ -69,3 +69,8 @@ Intraday strategy trading for ES futures on M5 data with 3 if-then conditions an
 ![Algo adee2](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_M5_buyside/ALGO_ADEE_ruturn_months.png)
 
 ![Algo adee3](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_M5_buyside/ALGO_ADEE_YMheat.png)
+
+## #9 Example:
+Intraday breakout strategy trading ES futures with holding period of couple of minutes. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results without slipp or commisions, 2010-2019. 
+
+![Algo 8v88](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_8Av88A.png)
