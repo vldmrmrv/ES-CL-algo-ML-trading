@@ -76,6 +76,6 @@ Intraday breakout strategy trading ES futures with holding period of couple of m
 ![Algo 8v88](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_8Av88A.png)
 
 ## #10 Example:
-Intraday price action strategy trading CL futures with holding period of couple of minutes. Chart with P&L (profit and loss in terms or R (risk/reward) - cumulative) and DD (drawdown in R - maximum cumulative) for better understanting potential Profit and Risk. Results without slipp or commisions, 2017-2021. 
+Intraday price action strategy trading CL futures with holding period of couple of minutes. Chart with P&L (profit and loss in R (risk/reward) - cumulative) and DD (drawdown in R - maximum cumulative) for better understanting potential Profit and Risk. Results without slipp or commisions, 2017-2021. 
 
 ![Algo 8v18](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_CL_n21_1h.png)
