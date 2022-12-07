@@ -74,3 +74,8 @@ Intraday strategy trading for ES futures on M5 data with 3 if-then conditions an
 Intraday breakout strategy trading ES futures with holding period of couple of minutes. Chart with P&L (profit and loss - cumulative) and DD (drawdown - maximum cumulative) for better understanting potential Profit and Risk. Results without slipp or commisions, 2010-2019. 
 
 ![Algo 8v88](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_8Av88A.png)
+
+## #10 Example:
+Intraday price action strategy trading CL futures with holding period of couple of minutes. Chart with P&L (profit and loss in terms or R (risk/reward) - cumulative) and DD (drawdown in R - maximum cumulative) for better understanting potential Profit and Risk. Results without slipp or commisions, 2017-2021. 
+
+![Algo 8v18](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_CL_n21_1h.png)
