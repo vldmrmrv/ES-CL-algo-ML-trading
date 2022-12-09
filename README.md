@@ -81,3 +81,8 @@ Intraday price action strategy trading CL futures with holding period of couple 
 ![Algo 8v18](https://github.com/vldmrmrv/ES-algorithmic-trading-strategy/blob/main/ALGO_CL_n21_1h.png)
 
 ![Algo 8a18](https://github.com/vldmrmrv/ES-CL-algorithmic-trading-strategy/blob/main/ALGO_CL_n21_12a4B.png)
+
+## #11 Example:
+Intraday ES IRB strategy with fixed RRR. Chart with P&L (profit and loss in R (risk/reward) - cumulative) and DD (drawdown in R - maximum cumulative) for better understanting potential Profit and Risk (markers on new equity highs). Results without slipp or commisions, 2017-2021.
+
+![Algo 8EE78](https://github.com/vldmrmrv/ES-CL-algorithmic-trading-strategy/blob/main/ALGO_ES_IRB_a44.png)
