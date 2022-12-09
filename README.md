@@ -1,4 +1,4 @@
-## ES algo trading SAMPLES
+## ES/CL algo trading SAMPLES
 Algorithmic trading is a method of executing orders using automated pre-programmed trading instructions accounting for variables such as time, price, and volume.
 
 ## #1 Example:
