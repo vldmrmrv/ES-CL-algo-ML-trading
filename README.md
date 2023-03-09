@@ -86,3 +86,49 @@ Intraday price action strategy trading CL futures with holding period of couple 
 Intraday ES IRB strategy with fixed RRR. Chart with P&L (profit and loss in R (risk/reward) - cumulative) and DD (drawdown in R - maximum cumulative) for better understanting potential Profit and Risk (markers on new equity highs). Results without slipp or commisions, 2017-2021.
 
 ![Algo 8EE78](https://github.com/vldmrmrv/ES-CL-algorithmic-trading-strategy/blob/main/ALGO_ES_IRB_a44.png)
+
+
+## #12 ML decisiontree & randomforrest:
+
+Simple decision tree (DT) and random forres (RF) algorithms used for a regression task in ES dataset (10 years of data - 2300 rows). Based on 13 variables/columns we tried to predict ES RTH range in points (RNG_RTH).
+
+```python
+features = ['Month', 'Cal_xth', 'DoM', 'TDoM', 'DoW', 'pfATH_ON', 'ATH_H', 'pRNG_ON',
+            'RNG_ON', 'Open_ON', 'High_ON', 'Low_ON', 'Close_ON']
+
+X = df[features]
+
+train_X, val_X, train_y, val_y = train_test_split(X, y, random_state=1)
+rth_model = DecisionTreeRegressor(random_state=1)
+rth_model.fit(train_X, train_y)
+
+val_predictions = rth_model.predict(val_X)
+val_mae = mean_absolute_error(val_predictions, val_y)
+print("Validation MAE: {:,.0f}".format(val_mae))
+```
+
+Similar results for DT and RF with 5 nodes for DT and defaul settings in RF.
+
+
+```python
+for max_leaf_nodes in [5, 21, 144, 377, 1597]:
+    my_mae = get_mae(max_leaf_nodes, train_X, val_X, train_y, val_y)
+    print("Max leaf nodes: %d  \t\t\t Mean Absolute Error:  %d" %(max_leaf_nodes, my_mae))
+
+forest_model = RandomForestRegressor(random_state=1)
+forest_model.fit(train_X, train_y)
+rthrng_preds = forest_model.predict(val_X)
+print(mean_absolute_error(val_y, rthrng_preds))
+```
+
+Results: (RNG_RTH mean is 18.75 which makes these algos w/ these settings pretty much useless)
+
+```python
+Validation MAE: 9
+Max leaf nodes: 5  			     Mean Absolute Error:  6
+Max leaf nodes: 21  			 Mean Absolute Error:  7
+Max leaf nodes: 144  			 Mean Absolute Error:  7
+Max leaf nodes: 377  			 Mean Absolute Error:  8
+Max leaf nodes: 1597  			 Mean Absolute Error:  8
+6.409842592592593
+```
