@@ -121,7 +121,7 @@ rthrng_preds = forest_model.predict(val_X)
 print(mean_absolute_error(val_y, rthrng_preds))
 ```
 
-Results: (RNG_RTH mean is 18.75 which makes these algos w/ current settings pretty much useless)
+Results: (RNG_RTH mean is 18.75 which makes these models w/ current settings pretty much useless)
 
 ```python
 Validation MAE: 9
