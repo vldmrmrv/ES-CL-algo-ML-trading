@@ -93,9 +93,6 @@ Intraday ES IRB strategy with fixed RRR. Chart with P&L (profit and loss in R (r
 Simple decision tree (DT) and random forres (RF) algorithms used for a regression task in ES dataset (10 years of data - 2300 rows). Based on 13 variables/columns we tried to predict ES RTH range in points (RNG_RTH).
 
 ```python
-features = ['Month', 'Cal_xth', 'DoM', 'TDoM', 'DoW', 'pfATH_ON', 'ATH_H', 'pRNG_ON',
-            'RNG_ON', 'Open_ON', 'High_ON', 'Low_ON', 'Close_ON']
-
 X = df[features]
 
 train_X, val_X, train_y, val_y = train_test_split(X, y, random_state=1)
