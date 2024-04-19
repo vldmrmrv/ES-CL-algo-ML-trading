@@ -87,8 +87,16 @@ Intraday ES IB breakout strategy with fixed RRR. Chart with P&L (profit and loss
 
 ![Algo 8EE78](https://github.com/vldmrmrv/ES-CL-algorithmic-trading-strategy/blob/main/ALGO_ES_IRB_a44.png)
 
+## #12 Example:
+Intraday ES - holding period from minutes to EOD. Charts of P&L in points, DD (drawdown: P&L - maximum cumulative) and trades distribution. Results with slipp/commisions - 3 ticks/trade, dataset 1.7.2020-29.6.2023.
 
-## #12 ML decisiontree & randomforrest:
+![Algo R1](https://github.com/vldmrmrv/ES-CL-algo-ML-trading/blob/main/A_RL_F1.png)
+
+![Algo R2](https://github.com/vldmrmrv/ES-CL-algo-ML-trading/blob/main/A_RL_F2.png)
+
+![Algo R3](https://github.com/vldmrmrv/ES-CL-algo-ML-trading/blob/main/A_RL_F3.png)
+
+## #13 ML decisiontree & randomforrest:
 
 Simple decision tree (DT) and random forres (RF) algorithms used for a regression task in ES dataset (10 years of data - 2300 rows). Based on 13 variables/columns we tried to predict ES RTH range in points (RNG_RTH).
 
