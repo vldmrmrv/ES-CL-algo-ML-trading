@@ -96,7 +96,18 @@ Intraday ES - holding period from minutes to EOD. Charts of P&L in points, DD (d
 
 ![Algo R3](https://github.com/vldmrmrv/ES-CL-algo-ML-trading/blob/main/A_RL_F3.png)
 
-## #13 ML decisiontree & randomforrest:
+## #13 Example:
+Intraday Crude Oil futures - holding period from minutes to EOD. Charts of P&L in points, DD (drawdown: P&L - maximum cumulative) and trades distribution. Results with slipp/commisions - 3 and 6 ticks/trade, dataset 2.1.2014-28.9.2021.
+
+![Algo CLR1](https://github.com/vldmrmrv/ES-CL-algo-trading/blob/main/Crude/A_L_2_3tk6tk.png)
+
+![Algo CLR2](https://github.com/vldmrmrv/ES-CL-algo-trading/blob/main/Crude/A_L_2_DD3DD6.png)
+
+![Algo CLR3](https://github.com/vldmrmrv/ES-CL-algo-trading/blob/main/Crude/A_L_2_3tk.png)
+
+![Algo CLR3](https://github.com/vldmrmrv/ES-CL-algo-trading/blob/main/Crude/A_L_2_6tk.png)
+
+## #14 ML decisiontree & randomforrest:
 
 Simple decision tree (DT) and random forres (RF) algorithms used for a regression task in ES dataset (10 years of data - 2300 rows). Based on 13 variables/columns we tried to predict ES RTH range in points (RNG_RTH).
 
